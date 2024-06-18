@@ -22,12 +22,24 @@ header a{
     color: #76ABAE;
 }
 
+main{
+    display: grid;
+    grid-template-areas: 
+    "inicio"
+    "sobreMim"
+    "trajetoria"
+    "habilidades"
+    "projetos"
+    "contatos";
+}
+
 .inicio{
     display: flex;
     width: 100%;
     padding-top: 5%;
     padding-bottom: 12%;
     justify-content: center;
+    grid-area: inicio;
 }
 
 .inicio-first{
@@ -80,6 +92,7 @@ header a{
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    grid-area: sobreMim;
 }
 
 .sobre-mim-first{
@@ -118,6 +131,7 @@ header a{
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
+    grid-area: trajetoria;
 }
 
 .trajetoria h3{
@@ -159,6 +173,7 @@ header a{
     padding-top: 6%;
     text-align: center;
     gap: 100px;
+    grid-area: habilidades;
 }
 
 .habilidades h3{
@@ -168,6 +183,7 @@ header a{
 .habilidades-container{
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .habilidades-container img{
@@ -190,6 +206,7 @@ header a{
     flex-wrap: wrap;
     text-align: center;
     padding-top: 7%;
+    grid-area: projetos;
 }
 
 .projetos h3{
@@ -403,6 +420,10 @@ header a{
     font-size: 24px;
 }
 
+.image-footer i{
+    font-size: 24px;
+}
+
 .image-footer p{
     background-color: unset;
 }
@@ -412,6 +433,7 @@ header a{
     flex-direction: column;
     width: 100%;
     padding: 7% 5% 5% 16%;
+    grid-area: contatos;
 }
 
 .contatos h3{
@@ -439,8 +461,135 @@ header a{
 
 .contato-container a{
     text-decoration: none;
+    cursor: pointer;
 }
 
-@media screen and (min-width:375px){
+@media screen and (max-width:425px){
+    header{
+        flex-wrap: wrap;
+    }
     
+    .inicio{
+        justify-content: center;
+        padding-top: 25%;
+    }
+
+    .inicio-first{
+        width: 90%;
+    }
+    
+    .inicio-second{
+        display: none;
+    }
+
+    .inicio-first h1{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .inicio-first p{
+        font-size: 20px;
+    }
+
+    #inicio-first-contacts{
+        width: 60%;
+    }
+
+    .sobre-mim-photo{
+        display: none;
+    }
+
+    .sobre-mim-first{
+        width: 90%;
+    }
+
+    .sobre-mim-first h2{
+        padding-bottom: 12%;
+    }
+
+    .trajetoria{
+        padding: 0;
+        padding-top: 12%;
+        justify-content: center;
+    }
+
+    #trajetoria-title{
+        width: 90%;
+    }
+
+    .trajetoria-container{
+        width: 90%;
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+
+    .experiencias{
+        flex-wrap: wrap;
+    }
+
+    .habilidades{
+        justify-content: center;
+        max-width: 425px;
+        align-items: center;
+    }
+
+    .habilidades-container{
+       gap: 30px;
+       justify-content: center;
+       padding-bottom: 12%;
+    }
+
+    .habilidades-title{
+        width: 90%;
+        text-align: left;
+    }
+
+    .projetos{
+        max-width: 425px;
+        justify-content: flex-start;
+    }
+
+    .projetos-title{
+        text-align: left;
+    }
+
+    .tech-icons img{
+        width: 30px;
+    }
+
+    .slider-wrapper .image-list {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .slider-wrapper .image-list .image-container {
+        min-width: 280px; /* Ajuste conforme necessário */
+        max-width: 280px;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: auto;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 50%; /* Ajuste conforme necessário */
+    }
+
+    .contatos{
+        padding: 12% 0 12% 0;
+        align-items: center;
+    }
+
+    .contatos h3{
+        padding-bottom: 12%;
+    }
+
+    .contato-container span, i{
+        font-size: 40px;
+    }
+
 }
