@@ -4,592 +4,605 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #222831;
-    color: white;
 }
 
-header{
-    width: 100%;
+:root{
+    --font-family-primary: 'Bogart', sans-serif;
+    --font-family-second: "Montserrat", sans-serif;
+    --background-color-primary: #F6F6F6;
+}
+
+.initial-content-section{
+    width: 100vw;
+    min-height: 768px;
     display: flex;
-    align-content: center;
+    flex-direction: row;
+    background-color: var(--background-color-primary);
     justify-content: center;
-    padding-top: 40px;
-    gap: 15px;
-}
-
-header a{
-    text-decoration: none;
-    color: #76ABAE;
-}
-
-main{
-    display: grid;
-    grid-template-areas: 
-    "inicio"
-    "sobreMim"
-    "trajetoria"
-    "habilidades"
-    "projetos"
-    "contatos";
-}
-
-.inicio{
-    display: flex;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 12%;
-    justify-content: center;
-    grid-area: inicio;
-}
-
-.inicio-first{
-    align-content: center;
-}
-
-.inicio h1{
-    font-size: 75px;
-}
-
-.inicio-first p{
-    font-size: 28px;
-    padding-top: 2%;
-}
-
-.inicio-first h1{
-    width: 80%;
-}
-
-#inicio-first-contacts{
-    border: 1px solid #76ABAE;
-    width: 22%;
-    border-radius: 20px;
-    margin-top: 2%;
-    height: 40px;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-#inicio-first-contacts a{
-    text-decoration: none;
-    display: flex;
-}
-
-#inicio-first-contacts p{
-    font-size: 16px;
-}
-
-.inicio-second{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.sobre-mim{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-area: sobreMim;
-}
-
-.sobre-mim-first{
-    display: flex;
-    flex-direction: column;
     gap: 5%;
 }
 
-.sobre-mim-first h2{
-    color: #76ABAE;
-    font-size: 35px;
+.initial-container-content{
+    display: grid;
+    grid-template-areas: 
+    "portifolio portifolio"
+    "name name"
+    ". ."
+    "roleTitleAndContatos roleTitleAndContatos";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
 }
 
-.sobre-mim-text{
-    font-size: 18px;
+#portifolio-title{
+    grid-area: portifolio;
+    justify-self: center;
+    align-self: end;
+}
+
+#name-title{
+    grid-area: name;
+    align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-.sobre-mim-photo{
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    padding-top: 5%;
 }
 
-.sobre-mim-photo img{
-    width: 45%;
+
+.initial-container-content p{
+    font-family: var(--font-family-second);
+    letter-spacing: 0.09em;
+    font-size: 20px;
 }
 
-.trajetoria{
-    padding: 6% 15% 0 15%;
+.initial-container-content h1{
+    font-family: var(--font-family-primary);
+    font-size: 140px;
+    font-weight: 400;
+}
+
+#contatos{
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.roleTitleAndContatos{
+    grid-area: roleTitleAndContatos;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#contatos span{
+    border: 0.5px solid black;
+    margin-top: 5px;
+}
+
+.initial-container-svg{
     align-content: center;
-    justify-content: space-between;
-    grid-area: trajetoria;
 }
 
-.trajetoria h3{
-    font-size: 48px;
-}
-
-.formacao{
+.aboutme-section{
+    width: 100vw;
+    min-height: 768px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 5%;
+}
+
+.aboutme-first-content{
+    display: flex;
+    flex-direction:column;
+    gap: 20%;
+}
+
+.aboutme-second-content{
+    display: flex;
+    flex-direction:column;
     gap: 10%;
 }
 
-.experiencias{
-    display: flex;
-    gap: 5%;
+.aboutme-first-content img{ 
+    width: 360px;
 }
 
-.trajetoria-container{
+.aboutme-first-content p{
+    font-family: var(--font-family-second);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+}
+
+.aboutme-second-content p{
+    font-size: 20px;
+    font-family: var(--font-family-second);
+    font-weight: 400;
+    color: #676767;
+    line-height: 1.375em;
+}
+
+.aboutme-second-content h2{
+    font-family: var(--font-family-primary);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.aboutme-second-content{
+    max-width: 30%;
+}
+
+.trajetória{
+    width: 100vw;
+    min-height: 768px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #474e5d;
 }
 
-.trajetoria-container h3{
-    font-size: 24px;
-    color: #76ABAE;
+.trajetória h2{
+    font-family: var(--font-family-primary);
+    font-weight: 500;
 }
 
-.trajetoria-container p{
-    font-size: 18px;
+#trajetoria-title{
+    text-align: center;
+    font-size: 60px;
+    color: #FFF;
+    padding-bottom: 2%;
+}
+
+.trajetória p{
+    font-family: var(--font-family-second);
+    line-height: 1.375em;
 }
 
 .habilidades{
+    width: 100vw;
+    min-height: 768px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 5%;
+    text-align: center;
     align-content: center;
     flex-wrap: wrap;
-    padding-top: 6%;
-    text-align: center;
-    gap: 100px;
-    grid-area: habilidades;
+    justify-content: space-evenly;
 }
 
-.habilidades h3{
-    font-size: 48px;
+.habilidades h2{
+    font-size: 60px;
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+}
+
+.habilidades p{
+    font-family: var(--font-family-second);
 }
 
 .habilidades-container{
     display: flex;
-    gap: 15px;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1%;
 }
 
-.habilidades-container img{
+.habilidade-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F6F6F6;
+    width: 150px;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+
+.habilidade-item img{
     width: 100px;
 }
 
-.skill{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-}
-
 .projetos{
+    width: 100vw;
+    min-height: 768px;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    gap: 5%;
     text-align: center;
-    padding-top: 7%;
-    grid-area: projetos;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.projetos h3{
-    align-self: baseline;
-    font-size: 48px;
-    padding-bottom: 4%;
+.projetos h2{
+    font-family: var(--font-family-primary);
 }
 
-
-.container {
-    max-width: 1200px;
-    width: 95%;
+.projetos-container{
+    display: flex;
+    flex-direction: row;
 }
 
-.slider-wrapper {
-    position: relative;
+.projeto-icons img{
+    width: 30px;
 }
 
-.slider-wrapper .slide-button {
-  position: absolute;
-  top: 50%;
-  outline: none;
-  border: none;
-  height: 50px;
-  width: 50px;
-  z-index: 5;
-  color: #fff;
-  display: flex;
-  cursor: pointer;
-  font-size: 2.2rem;
-  background: #000;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transform: translateY(-50%);
+.projeto-item {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
 }
 
-.slider-wrapper .slide-button:hover {
-  background: #404040;
+.projeto-item-img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+  
+.projeto-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.projeto-container {
+    padding: 2px 16px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.slider-wrapper .slide-button#prev-slide {
-  left: -25px;
-  display: none;
-}
-
-.slider-wrapper .slide-button#next-slide {
-  right: -25px;
-}
-
-.slider-wrapper .image-list {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 18px;
-  font-size: 0;
-  list-style: none;
-  margin-bottom: 30px;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.slider-wrapper .image-list::-webkit-scrollbar {
-  display: none;
-}
-
-.slider-wrapper .image-list .image-item {
-  width: 325px;
-  height: 400px;
-  object-fit: cover;
-}
-
-.container .slider-scrollbar {
-  height: 24px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.slider-scrollbar .scrollbar-track {
-  background: #ccc;
-  width: 100%;
-  height: 2px;
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  position: relative;
-}
-
-.slider-scrollbar:hover .scrollbar-track {
-  height: 4px;
-}
-
-.slider-scrollbar .scrollbar-thumb {
-  position: absolute;
-  background: rgba(118, 171, 174, 1);
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  height: 100%;
-  cursor: grab;
-  border-radius: inherit;
-}
-
-.slider-scrollbar .scrollbar-thumb:active {
-  cursor: grabbing;
-  height: 8px;
-  top: -2px;
-}
-
-.slider-scrollbar .scrollbar-thumb::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -10px;
-  bottom: -10px;
-}
- 
-@media only screen and (max-width: 1023px) {
-  .slider-wrapper .slide-button {
-    display: none !important;
-  }
-  .slider-wrapper .image-list {
-    gap: 10px;
-    margin-bottom: 15px;
-    scroll-snap-type: x mandatory;
-  }
-  .slider-wrapper .image-list .image-item {
-    width: 280px;
-    height: 380px;
-  }
-  .slider-scrollbar .scrollbar-thumb {
-    width: 20%;
-  }
-}
-
-
-.image-container {
-    position: relative;
-    width: 325px;
-    height: 450px;
-    overflow: hidden;
-}
-
-.image-header {
-    /* position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px; */
+.projeto-header{
     display: flex;
     justify-content: space-between;
-    color: white;
-    z-index: 1;
-    font-size: 1rem; /* Ajuste conforme necessário */
-    /* background: rgba(0, 0, 0, 0.5);   */
-    padding: 5px;
-    border-radius: 5px;
-    height: 50px;
-}
-
-.tech-icons{
-    width: 70%;
-}
-
-.tech-icons img {
-    margin-left: 5px;
-    background: rgba(255, 255, 255, 0.2); /* Fundo transparente para os ícones */
-    padding: 2px 5px;
-    border-radius: 3px;
-    width: 50px;
-}
-
-.image-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(to top, rgba(118, 171, 174, 1), rgba(128, 0, 128, 0));
-    color: blue;
-    text-align: center;
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.image-footer a {
-    color: #fff;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.5); /* Fundo transparente para os links */
-    border-radius: 5px;
-    transition: background 0.3s;
-
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.image-footer a:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.image-footer span, i{
-    background-color: unset;
-    font-size: 24px;
-}
-
-.image-footer i{
-    font-size: 24px;
-}
-
-.image-footer p{
-    background-color: unset;
-}
-
-.contatos{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 7% 5% 5% 16%;
-    grid-area: contatos;
-}
-
-.contatos h3{
-    font-size: 48px;
-    padding-bottom: 4%;
-}
-
-.contatos-container span, i{
-    font-size: 60px;
-}
-
-.contatos-container{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.contato-container{
-    display: flex;
     align-content: center;
-    text-align: center;
     align-items: center;
-    gap: 15px;
 }
 
-.contato-container a{
+.projeto-header h4{
+    font-family: var(--font-family-primary);
+    font-size: 18px;
+}
+
+.projeto-btns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projeto-btns a{
+    font-family: var(--font-family-second);
     text-decoration: none;
-    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
 }
 
-@media screen and (max-width:425px){
-    header{
-        flex-wrap: wrap;
+.projeto-btns i{
+    font-size: 20px;
+}
+
+.projeto-site{
+    background-color: #102C57;
+    color: #FFF;
+}
+
+.projeto-repo{
+    background-color: #000;
+    color: #FFF;
+}
+
+.projeto-repo i{
+    color: #FFF !important;
+}
+
+/* Timeline */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+  
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #842841;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+  
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+  
+  
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+  
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+  
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+  
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
     }
     
-    .inicio{
-        justify-content: center;
-        padding-top: 25%;
-    }
-
-    .inicio-first{
-        width: 90%;
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
     }
     
-    .inicio-second{
-        display: none;
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
     }
-
-    .inicio-first h1{
-        font-size: 40px;
-        width: 100%;
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
     }
-
-    .inicio-first p{
-        font-size: 20px;
-    }
-
-    #inicio-first-contacts{
-        width: 60%;
-    }
-
-    .sobre-mim-photo{
-        display: none;
-    }
-
-    .sobre-mim-first{
-        width: 90%;
-    }
-
-    .sobre-mim-first h2{
-        padding-bottom: 12%;
-    }
-
-    .trajetoria{
-        padding: 0;
-        padding-top: 12%;
-        justify-content: center;
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
     }
 
     #trajetoria-title{
-        width: 90%;
+        font-size: 40px;
+    }
+}
+
+/* end */
+
+@media (max-width:425px) {
+    .initial-content-section{
+        flex-direction: column;
+    }
+    
+    .initial-container-content p{
+        font-size: 14px;
     }
 
-    .trajetoria-container{
-        width: 90%;
-        padding-top: 12%;
-        padding-bottom: 12%;
+    .initial-container-content h1{
+        font-size: 90px;
     }
 
-    .experiencias{
-        flex-wrap: wrap;
-    }
-
-    .habilidades{
+    .roleTitleAndContatos{
         justify-content: center;
-        max-width: 425px;
-        align-items: center;
+        gap: 15px;
+    }
+    
+    .initial-container-svg svg{
+        width: 300px;
     }
 
-    .habilidades-container{
-       gap: 30px;
-       justify-content: center;
-       padding-bottom: 12%;
-    }
-
-    .habilidades-title{
-        width: 90%;
-        text-align: left;
-    }
-
-    .projetos{
-        max-width: 425px;
-        justify-content: flex-start;
-    }
-
-    .projetos-title{
-        text-align: left;
-    }
-
-    .tech-icons img{
-        width: 30px;
-    }
-
-    .slider-wrapper .image-list {
+    .initial-container-svg{
         display: flex;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        width: 100%;
-        gap: 10px;
+        justify-content: center;
     }
 
-    .slider-wrapper .image-list .image-container {
-        min-width: 280px; /* Ajuste conforme necessário */
-        max-width: 280px;
+    .aboutme-section{
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
-    .slider-wrapper .image-list .image-item {
-        width: 280px;
-        height: auto;
+    .aboutme-first-content img{
+        width: 200px;
     }
 
-    .slider-scrollbar .scrollbar-thumb {
-        width: 50%; /* Ajuste conforme necessário */
+    .aboutme-first-content{
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 15px;
     }
 
-    .contatos{
-        padding: 12% 0 12% 0;
-        align-items: center;
+    .aboutme-first-content p{
+        font-size: 20px;
+        text-align: center;
     }
 
-    .contatos h3{
-        padding-bottom: 12%;
+    .aboutme-second-content{
+        max-width: 90%;
+        gap: 20px;
     }
 
-    .contato-container span, i{
+    .aboutme-second-content h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aboutme-second-content p{
+        font-size: 15px;
+    }
+
+    .habilidade-item{
+        width: 90px;
+    }
+
+    .habilidade-item img{
+        width: 70px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px){
+	.initial-content-section{
+        flex-direction: column;
+    }
+    
+    .initial-container-content p{
+        font-size: 15px;
+    }
+
+    .initial-container-content h1{
+        font-size: 100px;
+    }
+
+    .roleTitleAndContatos{
+        justify-content: center;
+    }
+    
+    .initial-container-svg svg{
+        width: 300px;
+    }
+
+    .initial-container-svg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutme-section{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 45px;
+    }
+
+    .aboutme-first-content{
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .aboutme-first-content p{
+        text-align: center;
+    }
+
+    .aboutme-second-content{
+        max-width: 70%;
+        gap: 30px;
+    }
+
+    .aboutme-second-content h2{
         font-size: 40px;
     }
 
+    .aboutme-second-content p{
+        font-size: 16px;
+    }
+
+    .habilidade-item{
+        width: 100px;
+    }
+
+    .habilidade-item img{
+        width: 80px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+	.initial-container-content p{
+        font-size: 15px;
+    }
+
+    .initial-container-content h1{
+        font-size: 120px;
+    }
+    
+    .initial-container-svg svg{
+        width: 300px;
+    }
+
+    .aboutme-first-content p{
+        font-size: 20px;
+    }
+
+    .aboutme-second-content p{
+        font-size: 16px;
+    }
+
+    .aboutme-second-content h2{
+        font-size: 40px;
+    }
 }

@@ -5,272 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>André Dias</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <header>
-        <a href="">Início</a>
-        <a href="">Sobre mim</a>
-        <a href="">Trajetória</a>
-        <a href="">Habilidades</a>
-        <a href="">Projetos</a>
-        <a href="">Meus contatos</a>
-    </header>
     <main>
-        <section class="inicio">
-            <div class="inicio-first">
-                <h1>Olá, me chamo <span style="color: #76ABAE;">André Henrique</span>,</h1>
-                <div><p>e sou um Desenvolvedor Full-stack</p></div>
-                <div id="inicio-first-contacts">
-                    <a href=""><p>VAMOS CONVERSAR?</p>
-                        <span class="material-symbols-outlined">
-                        trending_flat
-                        </span>
-                    </a>
-                </div>
+       <section class="initial-content-section">
+          <div class="initial-container-content">
+            <p id="portifolio-title">PORTIFÓLIO</p>
+            <h1 id="name-title"><span>André</span><span style="align-self: center;">Dias</span></h1>
+            <div class="roleTitleAndContatos">
+              <p id="role-title">DESENVOLVEDOR FULL-STACK</p>
+              <p id="contatos">CONTATOS<span></span></p>
             </div>
-            <div class="inicio-second">
-                <div>
-                    <img src="./imgs/Logo-porrtifolio.png" alt="">
-                </div>
+          </div>
+          <div class="initial-container-svg">
+            <svg id="cog" width="400" data-slot="icon" fill="none" stroke-width="1.5" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="black" d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"></path>
+            </svg>
+          </div>
+       </section>
+       <section class="aboutme-section">
+          <div class="aboutme-first-content">
+            <p>SOBRE MIM</p>
+            <img src="./imgs/profilePhoto.jpg" alt="">
+          </div>
+          <div class="aboutme-second-content">
+            <h2>Sou um Desenvolvedor Full-stack</h2>
+            <p>Desenvolvedor Full-stack com mais de dois anos de experiência na área, especializado em projetos de e commerce e plataformas como Salesforce Commerce Cloud e Oracle Commerce Cloud. Durante esse período, fui responsável pelo desenvolvimento de interfaces personalizadas, implementando melhorias e otimizações para garantir uma experiência do usuário eficiente e atraente.</p>
+          </div>
+       </section>
+       <section class="trajetória">
+        <h2 id="trajetoria-title">Trajetória</h2>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>Formação | 2021-2023</h2>
+              <p><b>Instituição</b>: Faculdade de Tecnologia do Estado de São Paulo</p>
+              <p><b>Curso</b>: Análise e Desenvolvimento de Sistemas</p>
+              <p><b style="color: #F4CE14;">Reconhecimento</b>: Melhor aluno da 6ª turma de ADS.</p>
             </div>
-        </section>
-        <section class="sobre-mim">
-            <div class="sobre-mim-first">
-                <h2>Sobre mim</h2>
-                <div class="sobre-mim-text"><p>Com dois anos de experiência com o Desenvolvimento Front-end,<br> atuei em projetos envolvendo a construção de e-commerces,<br> criando funcionalidades e telas interativas com o foco<br> na melhor experiência para o usuário.</p>
-                
-                <p>Ademais, possuo formação no Tecnólogo <br>de Análise e Desenvolvimento de Sistemas,<br> pela Fatec. </p>
-                </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>Experiência | 2021 - 2023</h2>
+              <p><b>Empresa</b>: Adin - Oracle CX</p>
+              <p><b>Cargo</b>: Estagiário de TI</p>
+              <p><b>Descrição</b>: Atuei com o desenvolvimento de e-commerces, incluindo customizações, funcionalidades e diferentes layouts na plataforma Salesforce Commerce Cloud, utilizando React, JavaScript, Sass, Figma e Bitbucket. Com essa plataforma, adquiri inúmeras experiências com Page Designer, Content Slots, Assets e Business Manager.
+              </p>
             </div>
-            <div class="sobre-mim-photo">
-                <img src="./imgs/profilePhoto.jpg" alt="">
-            </div>
-        </section>
-        <section class="trajetoria">
-            <div id="trajetoria-title"><h3>Trajetória</h3></div>
-            <div class="trajetoria-container">
-                <div class="formacao">
-                    <h3>Formação</h3>
-                    <div>
-                        <p>Faculdade de Tecnologia do Estado de São Paulo</p>
-                        <p>Análise e Desenvolvimento de Sistemas</p>
-                        <p>2021 - 2023</p>
-                    </div>
-                </div>
-                <div class="experiencias">
-                    <h3>Experiências</h3>
-                   <div>
-                    <p><b>Empresa: Adin - Oracle CX</b></p>
-                    <p><b>Cargo: Estagiário de TI</b></p>
-                    <p> Desenvolvimento de e-commerces, incluindo customizações,<br> funcionalidades e diferentes layouts na
-                    plataforma Salesforce<br> Commerce Cloud, utilizando React, JavaScript, Sass, Figma e Bitbucket. <br>Com essa
-                    plataforma, adquiri inúmeras experiências com Page<br> Designer, Content Slots, Assets e Business Manager.</p>
-                   </div>
-                </div>
-            </div>
-        </section>
-        <section class="habilidades">
-            <div class="habilidades-title"><h3>Habilidades</h3></div>
-            <div class="habilidades-container">
-                <div class="skill">    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                    <p>Angular</p>
-                </div>
-                <div class="skill">    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" />
-                    <p>.NET</p>
-                </div>
-                <div class="skill">     
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                    <p>TypeScript</p>
-                </div>
-                <div class="skill">     
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-                    <p>C#</p>
-                </div>
-                <div class="skill">     
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill">      
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" />
-                    <p>SQLServer</p>
-                </div>
-                <div class="skill">       
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-                    <p>PostgreSQL</p>
-                </div>
-                <div class="skill">       
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                    <p>TailwindCSS</p>
-                </div>
-                <div class="skill">         
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
-                    <p>Sass</p>
-                </div>
-                <div class="skill">                  
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                    <p>CSS</p>
-                </div>
-                <div class="skill">                       
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                    <p>HTML</p>
-                </div>
-            </div>
-        </section>
-        <section class="projetos">
-            <div class="projetos-title"><h3>Projetos</h3></div>
-            <div class="container">
-                <div class="slider-wrapper">
-                  <button id="prev-slide" class="slide-button material-symbols-outlined">
-                    chevron_left
-                  </button>
-                  <ul class="image-list">
-                    <div class="image-container">
-                        <div class="image-header">
-                          <p>App de Previsão do tempo</p>
-                          <div class="tech-icons">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
-          
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
-          
-                          </div>
-                        </div>
-                        <img class="image-item" src="./imgs/weatherApp.png" alt="img-1" />
-                        <div class="image-footer">
-                            <a href="https://angular-weather-qnkoflirq-andredias25s-projects.vercel.app/" target="_blank">
-                                <span class="material-symbols-outlined">
-                                    public
-                                 </span>
-                                Site
-                            </a>
-                            <a href="https://github.com/AndreDias25/angular-weather-app" target="_blank">
-                                <i class="devicon-github-original"></i>
-                                Repositório
-                            </a>
-                        </div>
-                      </div>
-                      <div class="image-container">
-                        <div class="image-header">
-                          <p>+Sáude(Projeto do TCC)</p>
-                          <div class="tech-icons"> 
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-                          </div> 
-                        </div>
-                        <img class="image-item" src="./imgs/projetoTcc.png" alt="img-1" />
-                        <div class="image-footer">
-                          <a href="https://github.com/AndreDias25/projeto-tcc" target="_blank">
-                            <span class="material-symbols-outlined">
-                                public
-                             </span>
-                            Site
-                            </a>
-                          <a href="https://github.com/AndreDias25/projeto-tcc" target="_blank">
-                            <i class="devicon-github-original"></i>
-                            Repositório
-                            </a>
-                        </div>
-                      </div>
-                      <div class="image-container">
-                        <div class="image-header">
-                          <p>Gerenciamento de produtos</p>
-                          <div class="tech-icons"> 
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />        
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
-                          </div>
-                        </div>
-                        <img class="image-item" src="./imgs/gerencDeProd.png" alt="img-1" />
-                        <div class="image-footer">
-                          <a href="https://voluble-queijadas-d80bcb.netlify.app/inicio" target="_blank">
-                            <span class="material-symbols-outlined">
-                                public
-                             </span>
-                            Site</a>
-                          <a href="https://github.com/AndreDias25/Desafio-Everymind-NunesSports" target="_blank">
-                            <i class="devicon-github-original"></i>
-                            Repositório</a>
-                        </div>
-                      </div>
-                      <div class="image-container">
-                        <div class="image-header">
-                          <p>Próximos projetos...</p>
-                          <div class="tech-icons">
-                          </div>
-                        </div>
-                        <img class="image-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRxw89kpKWnzJN3rjhw0X6SgchV_SOzn3krA&s" alt="img-1" />
-                        <div class="image-footer">
-                            <a href="#" target="_blank">
-                                <span class="material-symbols-outlined">
-                                    public
-                                 </span>
-                                Site</a>
-                              <a href="#" target="_blank">
-                                <i class="devicon-github-original"></i>
-                                Repositório</a>
-                        </div>
-                      </div>
-                      <div class="image-container">
-                        <div class="image-header">
-                          <p>Próximos projetos...</p>
-                          <div class="tech-icons">
-                          </div>
-                        </div>
-                        <img class="image-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRxw89kpKWnzJN3rjhw0X6SgchV_SOzn3krA&s" alt="img-1" />
-                        <div class="image-footer">
-                            <a href="#" target="_blank">
-                                <span class="material-symbols-outlined">
-                                    public
-                                 </span>
-                                Site</a>
-                              <a href="#">
-                                <i class="devicon-github-original"></i>
-                                Repositório</a>
-                        </div>
-                      </div>
-                  </ul>
-                  <button id="next-slide" class="slide-button material-symbols-outlined">
-                    chevron_right
-                  </button>
-                </div>
-                <div class="slider-scrollbar">
-                  <div class="scrollbar-track">
-                    <div class="scrollbar-thumb"></div>
-                  </div>
+          </div>
+        </div>
+       </section>
+       <section class="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades-container">
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+            <p>Angular</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-plain.svg" />
+            <p>.NET</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+            <p>C#</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+            <p>TypeScript</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            <p>JavaScript</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+            <p>Sass</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+            <p>TailwindCSS</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" />
+            <p>CSS</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" />
+            <p>HTML</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+            <p>MySQL</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" />
+            <p>SQLServer</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+            <p>GIT</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+            <p>GitHub</p>
+          </div>
+          <div class="habilidade-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg" />
+            <p>Bitbucket</p>
+          </div>
+        </div>
+       </section>
+       <section class="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+          <div class="projeto-item">
+            <img class="projeto-item-img" src="./imgs/weatherApp.png" alt="Avatar">
+            <div class="projeto-container">
+              <div class="projeto-header">
+                <h4><b>Previsão de clima</b></h4> 
+                <div class="projeto-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />          
                 </div>
               </div>
-        </section>
-        <section class="contatos">
-            <h3>Meus contatos</h3>
-            <div class="contatos-container">
-                <div class="contato-container">
-                    <span class="material-symbols-outlined">
-                        call
-                    </span>
-                    <a href="https://wa.me/11995407367" target="_blank">(11) 995407367</a>
-                </div>
-                <div class="contato-container">
-                    <span class="material-symbols-outlined">
-                        mail
-                    </span>
-                    <a href="mailto:andre25dias@gmail.com" target="_blank">andre25dias@gmail.com</a>
-                </div>
-                <div class="contato-container">   
-                    <i class="devicon-github-original"></i>
-                    <a href="https://github.com/AndreDias25" target="_blank">/AndreDias25</a>
-                </div>
-                <div class="contato-container">
-                    <i class="devicon-linkedin-plain"></i>
-                    <a href="https://www.linkedin.com/in/andré-henrique-dias/" target="_blank">/andré-henrique-dias</a>
-                </div>
+              <div class="projeto-btns">
+                <a href="" class="projeto-site">
+                  Site
+                  <span class="material-symbols-outlined">
+                    arrow_outward
+                  </span>
+                </a>
+                <a href="" class="projeto-repo">
+                  Repositório
+                  <i class="devicon-github-original colored"></i>
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+       </section>
     </main>
-</body>
+    <script src="
+https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js
+"></script>
 <script src="/script.js"></script>
+</body>
 </html>
