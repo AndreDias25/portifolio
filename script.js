@@ -1,4 +1,4 @@
-new Vivus('cog', {duration: 500});
+// new Vivus('cog', {duration: 500});
 
 function copiarTexto(texto, buttonId) {
     navigator.clipboard.writeText(texto).then(function() {
@@ -12,3 +12,7 @@ function copiarTexto(texto, buttonId) {
         console.error('Erro ao copiar: ', err);
     });
 }
+
+document.querySelector('#contatos').addEventListener('click', function() {
+    document.querySelector('#contatos-section').scrollIntoView({ behavior: 'smooth' });
+});

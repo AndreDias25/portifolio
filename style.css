@@ -1,5 +1,3 @@
-/* https://colorhunt.co/palette/22283131363f76abaeeeeeee */
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -50,10 +48,10 @@
 }
 
 
-.initial-container-content p{
+.initial-container-content p, a{
     font-family: var(--font-family-second);
     letter-spacing: 0.09em;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .initial-container-content h1{
@@ -66,6 +64,27 @@
     font-weight: 500;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.contatos-text{
+    height: 23%;
+    transition: 0.3s;
+}
+
+.contatos-text:hover{
+    color: #08A88A;
+}
+
+#contatos:hover{
+    color: #08A88A;
+}
+
+#contatos:hover span{
+    border-color: #08A88A;
 }
 
 .roleTitleAndContatos{
@@ -82,6 +101,14 @@
 
 .initial-container-svg{
     align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#unique-lord-icon{
+    width: 400px;
+    height: 400px;
 }
 
 .aboutme-section{
@@ -107,6 +134,8 @@
 }
 
 .aboutme-first-content img{ 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     width: 360px;
 }
 
@@ -238,6 +267,8 @@
     width: 80%;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .projeto-icons img{
@@ -297,6 +328,8 @@
     display: flex;
     align-items: center;
     gap: 2%;
+    letter-spacing: normal;
+    font-size:medium;
 }
 
 .projeto-btns i{
@@ -306,15 +339,25 @@
 .projeto-site{
     background-color: #102C57;
     color: #FFF;
+    transition: 0.3s;
+}
+
+.projeto-site:hover{
+    background-color: #FFF;
+    color: #102C57;
+    border: 1px solid #102C57;
 }
 
 .projeto-repo{
     background-color: #000;
     color: #FFF;
+    transition: 0.3s;
 }
 
-.projeto-repo i{
-    color: #FFF !important;
+.projeto-repo:hover{
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
 }
 
 .contatos{
@@ -382,10 +425,18 @@
     display: flex;
     gap: 10px;
     width: 214px;
+    transition: 0.3s;
+    fill: #FFF;
+}
+
+.contatar:hover{
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    fill: #000;
 }
 
 .contatar svg{
-    fill: white;
     width: 25px;
 }
 
@@ -397,6 +448,12 @@
     border-radius: 10px;
     font-family: var(--font-family-second);
     font-size: 15px;
+    transition: 0.3s;
+}
+
+.copiar:hover{
+    background-color: #000;
+    color: #FFF;
 }
 
 .contato-phone-container, .contato-email-container{
@@ -557,7 +614,7 @@ footer a{
         flex-direction: column;
     }
     
-    .initial-container-content p{
+    .initial-container-content p, a{
         font-size: 14px;
     }
 
@@ -570,8 +627,9 @@ footer a{
         gap: 15px;
     }
     
-    .initial-container-svg svg{
-        width: 300px;
+    #unique-lord-icon{
+        width: 290px;
+        height: 290px;
     }
 
     .initial-container-svg{
@@ -638,7 +696,7 @@ footer a{
         flex-direction: column;
     }
     
-    .initial-container-content p{
+    .initial-container-content p, a{
         font-size: 15px;
     }
 
@@ -650,14 +708,14 @@ footer a{
         justify-content: center;
     }
     
-    .initial-container-svg svg{
+    /* .initial-container-svg svg{
         width: 300px;
-    }
+    } */
 
-    .initial-container-svg{
+    /* .initial-container-svg{
         display: flex;
         justify-content: center;
-    }
+    } */
 
     .aboutme-section{
         flex-direction: column;
@@ -702,7 +760,7 @@ footer a{
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
-	.initial-container-content p{
+	.initial-container-content p, a{
         font-size: 15px;
     }
 
@@ -710,9 +768,9 @@ footer a{
         font-size: 120px;
     }
     
-    .initial-container-svg svg{
+    /* .initial-container-svg svg{
         width: 300px;
-    }
+    } */
 
     .aboutme-first-content p{
         font-size: 20px;
